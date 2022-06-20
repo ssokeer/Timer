@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,100&family=Roboto&display=swap');
+
+*{
+    font-family: 'Azeret Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    width: 55%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top:150px;
+}
+
+.timer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.timer.timer__block{
+        width: 150px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+}
+
+.time {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 150px;
+    font-size: 95px;
+}
+
+.title {
+    background-color: rgb(6, 6, 6);
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.button {
+    border: none;
+    border-radius: 10px; 
+    font-size: 18px;
+    padding: 10px;
+    width: 180px;
+    transition: .3s ease-in-out;
+    color: white;
+    background-color: rgb(46 62 155);
+    cursor: pointer;
+}
+
+.button.start:hover {
+    background-color: rgb(84, 109, 249);
+}
+
+.button.stop:hover {
+    background-color: rgb(84, 109, 249);
+}
+
+.button.pause:hover {
+    background-color: #E03B8B;
+}
+
+.interval {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.interval:disabled {
+    opacity: 0;
+    cursor: auto;
+}
+
+.results__block {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    width: 275px;
+    border: 1px solid rgb(149, 147, 147);
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+}
+
+.results__info{
+    margin: 10px 0;
+    font-size: 16px;
+}
